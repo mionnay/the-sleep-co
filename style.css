@@ -145,3 +145,8 @@ footer a {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
+
+@media (max-width: 48em) {
+.flex-flip-sm   { flex-direction: column-reverse;   }
+
+}
