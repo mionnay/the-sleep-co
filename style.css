@@ -72,6 +72,8 @@ a:hover {
     color: #ffbe00;
 }
 
+
+
 .bg-featured  { background-color: #ffbe00; }
 .bg-accent { background-color: #e3ecf2;}
 
@@ -114,6 +116,7 @@ header {
     background-image: url('/images/the-sleep-co-white.jpg');
     background-size: cover;
     background-position: center;
+    padding: 2% 5%;
 }
 
 header h3 {
@@ -123,6 +126,16 @@ header h3 {
 
 footer a {
     border: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
 }
 
 /* Background Images  */
@@ -156,6 +169,25 @@ footer a {
 input, textarea {
     width: 100%;
     display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #ffbe00;
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    color: inherit;
+    appearance: none;
+    border: 2px solid #ffbe00;
 }
 
 @media (max-width: 48em) {
