@@ -14,6 +14,10 @@
     
 }
 
+.landscape { padding-bottom: 65%; }
+.portrait  { padding-bottom: 125%;}
+.square    { padding-bottom: 100%;}
+
 
 /* Universal Styles & Utility Classes */
 
@@ -31,6 +35,7 @@ body {
     color: white;
 }
 
+.tall-50    { min-height: 50vh; }
 .tall-60    { min-height: 60vh; }
 .tall-70    { min-height: 70vh; }
 .tall-80    { min-height: 80vh; }
@@ -40,15 +45,12 @@ body {
 
 /* Typography Styles  */
 
-h2 {
-    font-size: 2.5rem;
-    line-height: 1.1;
+h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
-h3 {
-    line-height: 1;
-}
+h2 { font-size: 2.5rem; }
 
 p {
     font-weight: 200;
@@ -69,6 +71,9 @@ a {
 a:hover {
     color: #ffbe00;
 }
+
+.bg-featured  { background-color: #ffbe00; }
+.bg-accent { background-color: #e3ecf2;}
 
 .featured-text  { color: #ffbe00; }
 .white-text  { color: white; }
@@ -144,6 +149,13 @@ footer a {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
+}
+
+/* Buttons and Forms  */
+
+input, textarea {
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 48em) {
