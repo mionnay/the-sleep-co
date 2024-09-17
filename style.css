@@ -5,7 +5,7 @@
 }
 
 
-/* Universal Image Styles */
+/* ----- Universal Image Styles ----- */
 
 .bg-image {
     background-image: url('/images/the-sleep-co-yellow.jpg');
@@ -43,7 +43,7 @@ body {
 .tall-100   { min-height: 100vh; }
 
 
-/* Typography Styles  */
+/* ----- Typography Styles ----- */
 
 h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
@@ -110,7 +110,7 @@ a:hover {
 .text-right     { text-align: right; }
 
 
-/* Header & Footer Styles  */
+/* ----- Header & Footer Styles ----- */
 
 header {
     background-image: url('/images/the-sleep-co-white.jpg');
@@ -138,7 +138,7 @@ nav a {
     margin-bottom: 0;
 }
 
-/* Background Images  */
+/* ----- Background Images ----- */
 
 .bg-bed { background-image: url('/images/the-sleep-co-bed.jpg');
 
@@ -155,7 +155,7 @@ nav a {
     background-position: 50% 57%;
 }
 
-/* Icon Grid  */
+/* ----- Icon Grid ----- */
 
 .fa-solid {
     display: block;
@@ -164,7 +164,7 @@ nav a {
     font-size: 3rem;
 }
 
-/* Buttons and Forms  */
+/* ----- Buttons and Forms ----- */
 
 input, textarea {
     width: 100%;
@@ -190,7 +190,33 @@ textarea:focus {
     border: 2px solid #ffbe00;
 }
 
+/* ----- General CSS Responsive Styles (Apply everywhere unless overridden) ----- */
+
+.show-xs,
+.show-sm,
+.show-md { 
+    display: none; 
+}
+
+/* ----- MD Media Query (64em / 1024px) ----- */
+
+@media (max-width: 64em) {
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+}
+
+/* ----- SM Media Query (48em / 768px) ----- */
+
 @media (max-width: 48em) {
-.flex-flip-sm   { flex-direction: column-reverse;   }
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+
+}
+
+/* ----- XS Media Query (36em / 576px) ----- */
+
+@media (max-width: 36em) {
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
 
 }
