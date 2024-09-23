@@ -138,6 +138,34 @@ nav a {
     margin-bottom: 0;
 }
 
+/* ----- Burger Menu Styles ----- */
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.burger-menu a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+.burger {
+    position: relative;
+    z-index: 2;
+
+}
+
+.burger i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
 /* ----- Background Images ----- */
 
 .bg-bed { background-image: url('/images/the-sleep-co-bed.jpg');
@@ -194,7 +222,8 @@ textarea:focus {
 
 .show-xs,
 .show-sm,
-.show-md { 
+.show-md,
+.burger-menu { 
     display: none; 
 }
 
