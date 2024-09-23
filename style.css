@@ -73,7 +73,6 @@ a:hover {
 }
 
 
-
 .bg-featured  { background-color: #ffbe00; }
 .bg-accent { background-color: #e3ecf2;}
 
@@ -141,11 +140,13 @@ nav a {
 /* ----- Burger Menu Styles ----- */
 
 .burger-menu {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .burger-menu a {
@@ -155,15 +156,22 @@ nav a {
 
 }
 
+
 .burger {
     position: relative;
-    z-index: 2;
+    cursor: pointer;
+    
+}
+
+.burger.active i {
+    color: inherit;
 
 }
 
 .burger i {
     font-size: 2.2rem;
     margin-bottom: 0;
+    
 }
 
 /* ----- Background Images ----- */
@@ -222,8 +230,7 @@ textarea:focus {
 
 .show-xs,
 .show-sm,
-.show-md,
-.burger-menu { 
+.show-md { 
     display: none; 
 }
 

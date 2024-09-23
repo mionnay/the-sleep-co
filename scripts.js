@@ -1,11 +1,11 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
-    $(".burger").click(function(){
+    $('.burger').click(function(){
 
+        $('.burger-menu').fadeToggle(100);
         $(this).toggleClass('active');
-        $(".burger-menu").slideToggle();
-
+        
     });
 
     // Animate on Scroll Activate
