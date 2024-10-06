@@ -9,14 +9,27 @@
 
 .bg-image {
     background-image: url('/images/the-sleep-co-yellow.jpg');
+    background-color: rgb(240,240,240);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     
 }
 
-.landscape { padding-bottom: 65%; }
-.portrait  { padding-bottom: 125%;}
-.square    { padding-bottom: 100%;}
+/* ----- Aspect Ratios ----- */
+
+.portrait-tall  { padding-bottom: 175%; }
+.portrait       { padding-bottom: 125%; }
+.square         { padding-bottom: 100%; }
+.landscape      { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Image Positions */
+
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 
 /* Universal Styles & Utility Classes */
@@ -146,7 +159,7 @@ nav a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger-menu a {
@@ -190,6 +203,12 @@ nav a {
     background-image: url('/images/the-sleep-co-yellow.jpg');
     background-position: 50% 57%;
 }
+
+/* ----- Image Gallery ----- */
+
+.gallery [class*=col-] {
+    padding: 0.5%;
+  }
 
 /* ----- Icon Grid ----- */
 
