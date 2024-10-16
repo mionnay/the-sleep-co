@@ -159,7 +159,7 @@ nav a {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 99;
 }
 
 .burger-menu a {
@@ -177,7 +177,7 @@ nav a {
 }
 
 .burger.active i {
-    color: inherit;
+    color: white;
 
 }
 
@@ -209,6 +209,20 @@ nav a {
 .gallery [class*=col-] {
     padding: 0.5%;
   }
+
+.gallery a {
+    border-bottom: none;
+}
+
+/* ----- Active Popup Background  ----- */
+
+.lg-backdrop {
+    background-color: rgb(120,120,125);
+}
+
+.lg-backdrop.in {
+    opacity: 0.9; 
+}
 
 /* ----- Icon Grid ----- */
 

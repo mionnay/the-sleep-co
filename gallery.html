@@ -35,11 +35,31 @@ gallery:
      </div>
  </header>
 
- <!---------------- Gallery ---------------->
+ <!---------------- Popup Gallery ---------------->
 
  <section class="padded">
 
- <div class="gallery grid">
+  <h2>Popup Gallery</h2>
+
+ <div class="gallery grid" id="lightgallery">
+
+    {% for item in page.gallery %}
+    <a class="{{item.column-size}}" href="{{item.background_image}}">
+      <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"></div>
+    </a>
+    {% endfor %}
+   
+  </div>
+
+  </section>
+
+  <!---------------- Standard Gallery ---------------->
+
+  <!---------------- <section class="padded">
+
+  <h2>Standard Gallery</h2>
+
+  <div class="gallery grid">
 
     {% for item in page.gallery %}
     <div class="{{item.column-size}}">
@@ -47,9 +67,9 @@ gallery:
     </div>
     {% endfor %}
    
-  </div>
+  </div> 
 
-   <!---------------- <div class="gallery grid">
+  <div class="gallery grid">
     <div class="col-6">
       <div class="bg-image portrait bg-image-1 bg-pos-b"></div>
     </div>
@@ -68,6 +88,6 @@ gallery:
     <div class="col-12">
       <div class="bg-image landscape bg-image-6"></div>
     </div>
-  </div> ---------------->
+  </div> 
 
-</section>
+</section> ---------------->
