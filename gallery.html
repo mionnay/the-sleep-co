@@ -1,5 +1,6 @@
 ---
 layout: default
+popup-gallery: true
 gallery:
  - column-size: col-6
    aspect-ratio: portrait
@@ -35,7 +36,9 @@ gallery:
      </div>
  </header>
 
- <!---------------- Popup Gallery ---------------->
+{% if page.popup-gallery == true %}
+
+<!---------------- Popup Gallery ---------------->
 
  <section class="padded">
 
@@ -51,11 +54,13 @@ gallery:
    
   </div>
 
-  </section>
+ </section>
 
-  <!---------------- Standard Gallery ---------------->
+{% else %}
 
-  <!---------------- <section class="padded">
+<!---------------- Standard Gallery ---------------->
+
+<section class="padded">
 
   <h2>Standard Gallery</h2>
 
@@ -69,25 +74,11 @@ gallery:
    
   </div> 
 
-  <div class="gallery grid">
-    <div class="col-6">
-      <div class="bg-image portrait bg-image-1 bg-pos-b"></div>
-    </div>
-    <div class="col-6">
-      <div class="bg-image portrait bg-image-2"></div>
-    </div>
-    <div class="col-4_xs-12">
-      <div class="bg-image square bg-image-3"></div>
-    </div>
-    <div class="col-4_xs-12">
-      <div class="bg-image square bg-image-4"></div>
-    </div>
-    <div class="col-4_xs-12">
-      <div class="bg-image square bg-image-5"></div>
-    </div>
-    <div class="col-12">
-      <div class="bg-image landscape bg-image-6"></div>
-    </div>
-  </div> 
 
-</section> ---------------->
+</section> 
+
+{% endif %}
+
+<!---------------- Testimonial Section ---------------->
+
+{% include testimonials.html %}
