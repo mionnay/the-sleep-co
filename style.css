@@ -129,6 +129,7 @@ header {
     background-size: cover;
     background-position: center;
     padding: 2% 5%;
+    position: relative;
 }
 
 header h3 {
@@ -154,12 +155,13 @@ nav a {
 
 .burger-menu {
     display: none;
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    position: absolute;
+    top: 12%;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 2;
 }
 
 .burger-menu a {
@@ -177,7 +179,7 @@ nav a {
 }
 
 .burger.active i {
-    color: white;
+    color: #ffbe00;
 
 }
 
