@@ -151,6 +151,12 @@ nav a {
     margin-bottom: 0;
 }
 
+.mvs {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    
+}
+
 /* ----- Burger Menu Styles ----- */
 
 .burger-menu {
