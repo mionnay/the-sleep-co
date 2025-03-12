@@ -98,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (= 2.5.23)
   jekyll (~> 4.3, >= 4.3.4)
+  sass-embedded (~> 1.75)
 
 RUBY VERSION
    ruby 3.1.2p20

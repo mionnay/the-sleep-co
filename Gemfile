@@ -4,3 +4,5 @@ ruby file: '.ruby-version'
 gem 'jekyll', '~> 4.3', '>= 4.3.4'
 
 gem 'bundler', '2.5.23' 
+
+gem 'sass-embedded', '~> 1.75'
